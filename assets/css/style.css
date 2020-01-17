@@ -1,0 +1,33 @@
+html {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background: #0C3E08;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: yellow;
+}
+
+.navbar-light .navbar-toggler {
+    background: white;
+}
+
+.navbar-light .navbar-toggler:hover{
+    background: yellow;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white; 
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover{
+    color: yellow;
+}
