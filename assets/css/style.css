@@ -1,9 +1,31 @@
 html {
-    font-family: Roboto, sans-serif;
+   scroll-behavior: smooth;
+}
+.bgImg {
+    background: url("../images/kenmarebay.jpg") no-repeat fixed;
+    height: 100vh;
+    background-position: center center;
+    background-size:cover; 
 }
 
+.jumbotron {
+    position: relative;
+    background: transparent;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.jumbotron .display-4 {
+    position: relative;
+    top: 30%;
+    text-align: center;
+}
+.jumbotron .display-4{
+    color: white;
+    opacity: 1;
+}
 .navbar {
-    background: #0C3E08;
+    background: rgb(14, 107, 7);
     color: white;
     font-size: 20px;
 }
