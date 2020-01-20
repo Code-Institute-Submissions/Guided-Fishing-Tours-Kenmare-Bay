@@ -1,5 +1,11 @@
+
+
 html {
    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 20px;
 }
 /*---------------------Home Page-----------------*/
 .bgImg {
@@ -55,6 +61,26 @@ html {
 
 .navbar-light .navbar-nav .active>.nav-link:hover{
     color: yellow;
+}
+
+/*---------------About Us -------------------------------------*/
+ .about {
+     background-color: #c7daa1;
+ }
+
+.row {
+  display: flex;
+}
+
+.about_image {
+  flex: 100%;
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 500px) {
+  .about_image {
+    width: 100%;
+  }
 }
 /*----------------Fishing Spots with Google Map ----------------*/
 .container fishing_map{
