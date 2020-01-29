@@ -2,7 +2,7 @@ function sendEmail(contactForm){
     emailjs.send("gmail","guided_fishing_tours",{
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
+        "tour_request": contactForm.projectsummary.value
     })
     .then(
         function(response) {

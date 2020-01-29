@@ -57,7 +57,7 @@
 				</div>
 				<div class="col-12">
 					<p class="sm-col-12 md-col-6"><strong>Hello!</strong><br>
-                    We are a family run company that provides guided tours for
+                        We are a family run company that provides guided tours for
 						fishing enthusiast in our beautifull Kenmare Bay.
 						We take pride in providing outstanding service to our customers. All necessary equipment
 						including baits and transport are available to you.
@@ -65,9 +65,6 @@
 						a call. We guarantee you a liftime experience!!</p>
 				</div>
 				<div class="row">
-					<!-- <div class="column about_image">
-						<img src="assets/images/kenmare-bay.jpg" alt="Harbour" style="width:100%">
-                    </div> -->
 					<div class="column about_image">
 						<img src="assets/images/ring-of-kerry.jpg" alt="coastline" style="width:100%">
                     </div>
@@ -122,6 +119,11 @@
 			</div>
 		</div>
 	</section>
+    <div class="weather-container">
+        <img class="icon">
+        <p class="weather"></p>
+        <p class="temp"></p>
+    </div>
 	<section class="about" id="contact-form">
 		<div class="container">
 			<div class="col-12">
@@ -129,7 +131,7 @@
 					<h2>Contact Us</h2>
 				</div>
 				<div>
-					<form onsubmit="return sendEmail(this);" class="signup-form">
+					<form class="signup-form">
 						<label for="fname">First Name</label>
 						<input type="text" class="text-input" name="first-name" id="fname" required>
 						<label for="lname">Last Name</label>
@@ -140,7 +142,7 @@
 							<label for="exampleFormControlTextarea3">Send us Your Enquiries</label>
 							<textarea class="form-control text-input" id="exampleFormControlTextarea3" rows="7" required></textarea>
 						</div>
-						<input class="join-button" type="submit" value="Submit">
+						<input onsubmit="return sendEmail(this);" class="join-button" type="submit" value="Submit">
                     </form>
 				</div>
 			</div>
@@ -151,9 +153,10 @@
 		src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
 	</script>
 	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU3zTfsmIdGbC9ohr1Z2mdFuuyU-gxXoA&callback=initMap">
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfTkG2Fgjlc5XB2Ak4qjhmM6TS0RwiGUg&callback=initMap">
 	</script>
-	<script src="assets/js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfTkG2Fgjlc5XB2Ak4qjhmM6TS0RwiGUg&libraries=geometry,places">
+    </script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -164,14 +167,15 @@
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
     <footer>
-        <div class="paragraph">
-            <ul class="social-links">
+        <div class="paragraph" id="links">
+            <ul class="social-links" >
                 <li><a target="_blank " href="# "><i class="fa fa-facebook "></i></a></li>
                 <li><a target="_blank " href="# "><i class="fa fa-instagram "></i></a></li>
                 <li><a target="_blank " href="# "><i class="fa fa-youtube "></i></a></li>
             </ul>
         </div>
     </footer>
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/sendEmail.js"></script>
 </body>
 

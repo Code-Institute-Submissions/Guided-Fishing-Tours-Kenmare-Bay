@@ -28,6 +28,8 @@ function initMap() {
         { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 }
 
+
+
 /*-----------------------Back to top button---------*/
 //Get the button element
 var mybutton = document.getElementById("myBtn");
@@ -49,3 +51,14 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+/*----------------------Weather API-------------------*/
+$.getJSON("https://api.openweathermap.org/data/2.5/weather?q=Kenmare&units=metric&appid=d17999dddb25e373cdd4d9bd55b6359e", function(data){
+    console.log(data);
+
+    var icon = "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
+
+    var temp = data.main.temp;
+
+    $('.icon').attr('src', icon);
+    $(".temp").append(temp);
+});
