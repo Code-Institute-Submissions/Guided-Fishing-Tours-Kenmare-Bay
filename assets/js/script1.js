@@ -51,14 +51,33 @@ function initMap() {
         zoom: 10,
         center: kenmare
     });
-     var contentString = 
-     
-    '<h3>Kenmare</h3>' +
-    '<p>Lorem Ipsum  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>' +'</div>'
+     var contentString =[
+        [
+            '<h3>Kenmare</h3>' +
+            '<p>Lorem Ipsum  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>' + '</div>'],
+        [
+            '<h3>BlackWater Harbour</h3>' +
+            '<p>Lorem Ipsum  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>' + '</div>'],
+        [
+            '<h3>Oysterbed Pier</h3>' +
+            '<p>Lorem Ipsum  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>' + '</div>'],
+        [
+            '<h3>Gleesk Harbour</h3>' +
+            '<p>Lorem Ipsum  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>' + '</div>'],
+        [
+            "<h3>Lamb's Head</h3>" +
+            '<p>Lorem Ipsum  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>' + '</div>'],
+        [
+            "<h3>Derrynane</h3>" +
+            '<p>Lorem Ipsum  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>' + '</div>']
+    ]; 
 	
 
    var infowindow = new google.maps.InfoWindow({
-    content: contentString
+       for(var i = 0; i < contentString.length; i++){
+             content: contentString[i];
+       }
+   
    });
 
    var marker = new google.maps.Marker({
@@ -69,7 +88,7 @@ function initMap() {
    marker.addListener('click', function() {
     infowindow.open(map, marker);
    });
-    //  var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
      var locations = [
         { lat: 51.8501559, lng: -9.7464887},
