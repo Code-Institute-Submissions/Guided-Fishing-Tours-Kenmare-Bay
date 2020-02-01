@@ -1,9 +1,9 @@
-function initMap(){
+function initMap() {
     // Map options
 
     var options = {
         zoom: 10,
-        center:{
+        center: {
             lat: 51.880097,
             lng: -9.583517
         }
@@ -11,142 +11,76 @@ function initMap(){
     // New Map
     var map = new google.maps.Map(document.getElementById("map"), options);
 
-    // Markers
-    // var marker = new google.maps.Marker({
-    //    position: {lat: 51.8501559, lng: -9.7464887},
-    //    title: 'Blackwater Harbour',
-    //    map: map,
-    //    icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-    // });
+    // Array of Markers
+    var markers = [
+        {
+            coords: { lat: 51.8501559, lng: -9.7464887 },
+            iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            content: "<h3>Blackwater Harbour</h3>"
+        },
+        {
+            coords: { lat: 51.8125, lng: -9.8963 },
+            iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            content: "<h3>Oysterbed Pier</h3>"
+        },
+        {
+            coords: { lat: 51.8012, lng: -9.9372 },
+            iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            content: "<h3>Gleesk Harbour</h3>"
+        },
+        {
+            coords: { lat: 51.8012, lng: -9.9372 },
+            iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            content: "<h3>Gleesk Harbour</h3>"
+        },
+        {
+            coords: { lat: 51.7452778, lng: -10.1327778 },
+            iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            content: "<h3>Lamb's Head</h3>"
+        },
+        {
+            coords: { lat: 51.7452778, lng: -10.1327778 },
+            iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            content: "<h3>Lamb's Head</h3>"
+        },
+        {
+            coords: { lat: 51.7595812, lng: -10.1254581 },
+            iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+            content: "<h3>Derrynane</h3>"
+        }
+    ];
 
-    // var infowindow = new google.maps.InfoWindow({
-    //     content: '<h3>Blackwater Harbour'
-    // });
+    // loop through markers
+    for (var i = 0; i < markers.length; i++) {
+        addMarker(markers[i]);
+    }
 
-    // marker.addListener('click', function(){
-    //     infowindow.open(map, marker);
-    // });
-
-    addMarker({
-        coords: {lat: 51.8501559, lng: -9.7464887},
-        iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-    });
-    addMarker({
-        coords: {lat: 51.8125, lng: -9.8963},
-        iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-    });
-    addMarker({
-        coords: {lat: 51.8012,lng: -9.9372},
-        iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-    });
-    addMarker({
-        coords: {lat: 51.7452778, lng: -10.1327778},
-        iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-    });
-    addMarker({
-        coords: {lat: 51.7595812, lng: -10.1254581},
-        iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-    });
     // Add Marker Function
-    function addMarker(props){
-    var marker = new google.maps.Marker({
-       position: props.coords,
-       map: map,
-       icon: props.iconImage
-    });
+    function addMarker(props) {
+        var marker = new google.maps.Marker({
+            position: props.coords,
+            map: map,
+        });
+
+        // check for custom icon
+        if (props.iconImage) {
+            // set icon image
+            marker.setIcon(props.iconImage);
+        }
+
+        if (props.content) {
+            var infowindow = new google.maps.InfoWindow({
+                content: props.content
+            });
+
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+        }
     }
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var InfoObj = [];
-// var centerCoords = {
-//     lat: 51.880097,
-//     lng: -9.583517
-// };
-// var icons = {
-//     parking: {
-//         icon: "/assets/google_api_icons/baseline_local_parking_black_18dp.png"
-//     },
-//     hotel: {
-//         icon: "/assets/google_api_icons/baseline_local_hotel_black_18dp.png"
-//     },
-//     restaurant: {
-//         icon: "/assets/google_api_icons/baseline_restaurant_menu_black_18dp.png"
-//     },
-//     fishing_spot: {
-//         icon: "/assets/google_api_icons/round_flag_black_18dp.png"
-//     },
-//     location: {
-//         icon: "/assets/google_api_icons/sharp_location_searcing_black_18dp.png"
-//     }
-// };
-
-// var markersOnMap = [
-//     {
-//         placeName: "Kenmare",
-//         LatLng: [{
-//             lat: 51.880097,
-//             lng: -9.583517
-//         }],
-//         type: 'location'
-//     },
-//     {
-//         placeName: "BlackWater Harbour",
-//         LatLng: [{
-//             lat: 51.8501559,
-//             lng: -9.7464887
-//         }],
-//         type: 'fishing_spot'
-//     },
-//     {
-//         placeName: "Oysterbed Pier",
-//         LatLng: [{
-//             lat: 51.8125,
-//             lng: -9.8963
-//         }],
-//         type: 'fishing_spot'
-//     },
-//     {
-//         placeName: "Gleesk Harbour",
-//         LatLng: [{
-//             lat: 51.8012,
-//             lng: -9.9372
-//         }],
-//         type: 'fishing_spot'
-//     },
-//     {
-//         placeName: "Lamb's Head",
-//         LatLng: [{
-//             lat: 51.7452778,
-//             lng: -10.1327778
-//         }],
-//         type: 'fishing_spot'
-//     },
-//     {
-//         placeName: "Derrynane",
-//         LatLng: [{
-//             lat: 51.7595812,
-//             lng: -10.1254581
-//         }],
-//         type: 'fishing_spot'
-//     }
-// ];
-// window.onload = function () {
-//     initMap();
-// };
 
 
 // function initMap() {
