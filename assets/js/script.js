@@ -6,7 +6,8 @@ function initMap() {
         center: {
             lat: 51.880097,
             lng: -9.583517
-        }
+        },
+        draggable: true
     }
     // New Map
     var map = new google.maps.Map(document.getElementById("map"), options);
@@ -250,6 +251,13 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+/*---------------Submit button in Contact Form----------------*/
+
+function btnFunction(){
+    alert("Your message has been sent!");
+    location.reload();
 }
 
 /*----------------------Weather API-------------------*/
