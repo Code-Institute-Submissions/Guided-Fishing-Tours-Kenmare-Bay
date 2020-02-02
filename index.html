@@ -28,7 +28,7 @@
 </head>
 
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</i></button>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<!-- Header/ Navbar -->
 	<header class="bgImg" id="home">
 		<nav class="navbar navbar-expand-lg navbar-light">
@@ -86,6 +86,7 @@
 					<h2>Fishing Spots</h2>
 				</div>
 				<div id="map_wrapper_div">
+                    <input type="text" class="form-control" id="search" placeholder="Search...">
 					<div id="map"></div>
 					<div class="weather-container">
 						<div>
@@ -128,15 +129,7 @@
 		</div>
 	</section>
 
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
+	
 	<footer>
 		<div class="paragraph" id="links">
 			<ul class="social-links">
@@ -146,6 +139,15 @@
 			</ul>
 		</div>
 	</footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
 	<!--  JavaScript -->
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/sendEmail.js"></script>
@@ -153,10 +155,7 @@
 		src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
 	</script>
 	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfTkG2Fgjlc5XB2Ak4qjhmM6TS0RwiGUg&callback=initMap">
-	</script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfTkG2Fgjlc5XB2Ak4qjhmM6TS0RwiGUg&libraries=geometry,places">
+		src="https://maps.googleapis.com/maps/api/js?&libraries=geometry,places&key=AIzaSyCfTkG2Fgjlc5XB2Ak4qjhmM6TS0RwiGUg&callback=initMap">
 	</script>
 
 </body>
