@@ -199,12 +199,6 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-/*---------------Submit button in Contact Form----------------*/
-
-function btnFunction() {
-    
-    location.reload();
-}
 
 /*----------------------Weather API-------------------*/
 // API key = d17999dddb25e373cdd4d9bd55b6359e;
