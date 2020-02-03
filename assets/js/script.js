@@ -222,19 +222,17 @@ window.onload = function () {
         var weather = data.weather[0].main;
         var wind = data.wind.speed;
 
-        $('.city').append(city)
+        $('.city').text("City: " + city)
         $('.icon').attr('src', icon);
-        $('.weather').append(weather);
-        $(".temp").append(temp);
-        $(".wind").append(wind);
+        $('.weather').text("Weather: " + weather);
+        $(".temp").text("Temperature: " + temp);
+        $(".wind").text("Wind: " + wind);
     });
 
 }
 
 function sendToPage() {
-        resetData();
-        city = document.getElementById("search_weather").value;
-      
+        city = document.getElementById('search_weather').value;
         $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=d17999dddb25e373cdd4d9bd55b6359e", function (data) {
             console.log(data);
 
@@ -244,22 +242,14 @@ function sendToPage() {
             var weather = data.weather[0].main;
             var wind = data.wind.speed;
 
-            $('.city').append(city)
-            $('.icon').attr('src', icon);
-            $('.weather').append(weather);
-            $(".temp").append(temp);
-            $(".wind").append(wind);
+        $('.city').text("City: " + city)
+        $('.icon').attr('src', icon);
+        $('.weather').text("Weather: " + weather);
+        $(".temp").text("Temperature: " + temp);
+        $(".wind").text("Wind: " + wind);
     
         });
-    
-    function resetData(){
-        document.getElementById("search_weather").value = "";
-        document.getElementsByClassName('.city').value = "";
-        document.getElementsByClassName('.icon').value="";
-        document.getElementsByClassName('.weather').value="";
-        document.getElementsByClassName('.temp').value="";
-        document.getElementsByClassName('.wind').value="";
-    }
+
 }
 
 
