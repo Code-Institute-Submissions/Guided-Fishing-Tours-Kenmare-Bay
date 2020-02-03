@@ -150,7 +150,6 @@ function initMap() {
 
     searchBox.addListener('places_changed', function(){
         var places = searchBox.getPlaces();
-    });
 
     if (places.length === 0){
         return;
@@ -158,11 +157,26 @@ function initMap() {
 
     locations.forEach(function(m) { m.setMap(null)});
     locations = [];
+
+    var bounds = new google.maps.LatLngBounds();
+
+    places.forEach(function(p){
+        if(!p.geometry)
+        return;
+
+        locations.push(new google.maps.Marker({
+            map: map,
+            title: p.name,
+            position: p.geometry.location
+        }));
+        if(p.geometry.viewport)
+            bounds.union(p.geometry.viewport);
+        else
+            bounds.extend(p.geometry.location);
+    });
+    map.fitBounds(bounds);
+    });
 }
-
-
-
-
 
 /*-----------------------Back to top button---------*/
 //Get the button element
@@ -188,7 +202,7 @@ function topFunction() {
 /*---------------Submit button in Contact Form----------------*/
 
 function btnFunction() {
-    alert("Your message has been sent!");
+    
     location.reload();
 }
 
@@ -218,8 +232,9 @@ window.onload = function () {
 }
 
 function sendToPage() {
-    if (city == null) {
-        city = "";
+        resetData();
+        city = document.getElementById("search_weather").value;
+      
         $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=d17999dddb25e373cdd4d9bd55b6359e", function (data) {
             console.log(data);
 
@@ -234,25 +249,16 @@ function sendToPage() {
             $('.weather').append(weather);
             $(".temp").append(temp);
             $(".wind").append(wind);
+    
         });
-    } else {
-
-        city = document.getElementById("search").value;
-        $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=d17999dddb25e373cdd4d9bd55b6359e", function (data) {
-            console.log(data);
-
-            var icon = "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
-
-            var temp = Math.floor(data.main.temp);
-            var weather = data.weather[0].main;
-            var wind = data.wind.speed;
-
-            $('.city').append(city)
-            $('.icon').attr('src', icon);
-            $('.weather').append(weather);
-            $(".temp").append(temp);
-            $(".wind").append(wind);
-        });
+    
+    function resetData(){
+        document.getElementById("search_weather").value = "";
+        document.getElementsByClassName('.city').value = "";
+        document.getElementsByClassName('.icon').value="";
+        document.getElementsByClassName('.weather').value="";
+        document.getElementsByClassName('.temp').value="";
+        document.getElementsByClassName('.wind').value="";
     }
 }
 
