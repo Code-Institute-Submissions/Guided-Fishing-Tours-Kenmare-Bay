@@ -1,6 +1,10 @@
 
 # Guided Tours Fishing in Kenmare Bay  
+<<<<<<< HEAD
 This projec was created with customer needs on mind and as well to promote product. For ease of passing information to 
+=======
+This project was created with customer needs on mind and as well to promote product. For ease of passing information to 
+>>>>>>> 1713d37c88a1131800b7b65b3ca65ae2e6d20f13
 customer I have used number of technologies.
 My goal with this project is to attract attention of my future employers and recruiters and explain who I am 
 and what I do. 
