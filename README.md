@@ -1,6 +1,5 @@
 
 # Guided Tours Fishing in Kenmare Bay  
->>>>>>> 07eba02596640201528a52d4f1dae5ccdd7df250
 This projec was created with customer needs on mind and as well to promote product. For ease of passing information to 
 customer I have used number of technologies.
 My goal with this project is to attract attention of my future employers and recruiters and explain who I am 

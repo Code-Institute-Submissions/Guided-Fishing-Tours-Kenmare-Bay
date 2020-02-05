@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,11 +20,15 @@
 
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
 	</script>
-	<script type="text/javascript">
-		(function(){
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
       emailjs.init("user_EXKocjTx1yahCHXq0tzvV");
    })();
-	</script>
+</script>
 </head>
 
 <body>
@@ -53,7 +57,7 @@
 		<!-- Jumbotron -->
 		<div class="jumbotron">
 			<h1 class="display-4">Guided Tours<br>
-				<h1 class="display-4"> Fishing in Kenmare Bay</h1>
+				 Fishing in Kenmare Bay</h1>
 		</div>
 	</header>
 	<section class="about" id="about_us">
@@ -77,6 +81,7 @@
                     </div>
 					</div>
 				</div>
+		</div>
 	</section>
 	<!-- Fishing Spots-->
 	<section class="fishing_class" id="fishing_spots">
@@ -88,14 +93,13 @@
 				<div id="map_wrapper_div">
 					<input type="text" class="form-control" id="search" placeholder="Search...">
 					<div id="map"></div>
-
 					<!----------------------------Weather API-->
 					<div class="weather-container">
 						<div>
-							<input type="text"  method="put" id="search_weather" placeholder="Enter city">
+							<input type="text" id="search_weather" placeholder="Enter city">
 							<input type='submit' onclick="sendToPage()"/>
 							<p class="city"></p>
-							<img class="icon">
+							<img class="icon" src="https://openweathermap.org/img/wn/" alt="weather icon">
 							<p class="weather">Weather: </p>
 							<p class="temp">Temperature: </p>
 							<p class="wind">Wind: </p>
@@ -103,6 +107,9 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="about" id="contact-form">
@@ -111,20 +118,18 @@
 				<div class="alert alert-success">
 					<h2>Contact Us</h2>
 				</div>
-				<div>
-					<div class="signup-form">
-						<label for="fname">First Name</label>
-						<input type="text" class="text-input" name="first-name" id="fname" required>
-						<label for="lname">Last Name</label>
-						<input type="text" class="text-input" name="last-name" id="lname" required>
+				<div class="signup-form">
+					<form  onsubmit="return sendMail(this);">
+						<label for="fname">Full Name</label>
+						<input type="text" class="text-input" name="name" id="fullname"  required>
 						<label for="email">Email</label>
 						<input type="email" class="text-input" name="email" id="email" required>
 						<div class="form-group">
-							<label for="exampleFormControlTextarea3">Send us Your Enquiries</label>
-							<textarea class="form-control text-input" id="exampleFormControlTextarea3" rows="7" required></textarea>
+							<label for="exampleFormControlTextarea3" >Send us Your Enquiries</label>
+							<textarea class="form-control text-input"  name="tour_request" id="exampleFormControlTextarea3" rows="7" required></textarea>
 						</div>
-						<input onsubmit="return sendEmail(this);" class="join-button" type="submit" value="Submit">
-                    </div>
+						<button class="join-button" type="submit" value="Submit" >Submit</button>
+                    </form>
 					</div>
 				</div>
 			</div>
@@ -132,11 +137,11 @@
 	<footer>
 		<div class="paragraph" id="links">
 			<ul class="social-links">
-				<li><a target="_blank " href="https://www.facebook.com/facebookapp"><i class="fa fa-facebook "></i></a>
+				<li><a href="https://www.facebook.com/facebookapp" target="_blank"><i class="fa fa-facebook "></i></a>
 				</li>
-				<li><a target="_blank " href="https://www.instagram.com"><i class="fa fa-instagram "></i></a></li>
-				<li><a target="_blank "
-						href="https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ"><i class="fa fa-youtube "></i></a>
+				<li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram "></i></a></li>
+				<li><a
+						href="https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ" target="_blank"><i class="fa fa-youtube "></i></a>
 				</li>
 			</ul>
 		</div>
