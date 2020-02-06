@@ -59,7 +59,6 @@ I have used some generic code from Bootstrap 4 website and then significantly mo
 I have used Google Maps API documentation and tutorials in order to create Google Map.
 I have used OpenWeather documentation and tutorials in ordet to create dynamic weather widget on my web-site.
 I have used media querie from Stack Overflow tutorial [here](https://stackoverflow.com/questions/tagged/media-queries).
-======= 
 
 ## Technologies  
 1.HTML
@@ -88,9 +87,6 @@ All content in fishing spots markers is taken from https://www.sea-angling-irela
 also Google Maps API, OpenWeather API.
 ### Media
 Some photos are taken from Unsplash.com, Fotolea.com, Adventureholidays.com, WallpaperFlare.com  free image library.
-## Acknowledgements  
-I have used some generic code from Bootstrap 4 website and then significantly modified to fit the wireframes and original ideas.
-I have used Google Maps API documentation and tutorials in order to create Google Map.
-I have used OpenWeather documentation and tutorials in ordet to create dynamic weather widget on my web-site.
-I have used media querie from Stack Overflow tutorial [here](https://stackoverflow.com/questions/tagged/media-queries).
+
+
 
