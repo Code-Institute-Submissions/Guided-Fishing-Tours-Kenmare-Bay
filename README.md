@@ -1,3 +1,4 @@
+
 # Guided Tours Fishing in Kenmare Bay  
 This project was created with customer needs on mind and as well to promote product. For ease of passing information to 
 customer I have used number of technologies.
@@ -67,6 +68,16 @@ I have used media querie from Stack Overflow tutorial [here](https://stackoverfl
 6.EmailJS 
 7.Google Maps API 
 8.OpenWeather API
+
+1.HTML 
+2.CSS3 
+3.Bootstrap(4.4.1) 
+4.JavaScript 
+5.JQuery 
+6.EmailJS API 
+7.Google Maps API 
+8.OpenWeather API 
+
 ## Features  
 The nav-bar and footer are used from Bootstrap with extra JavaScript for a toggle button in nav-bar. I have included back to top button also.
 ### Features left to implement
@@ -85,5 +96,4 @@ All content in fishing spots markers is taken from https://www.sea-angling-irela
 also Google Maps API, OpenWeather API.
 ### Media
 Some photos are taken from Unsplash.com, Fotolea.com, Adventureholidays.com, WallpaperFlare.com  free image library.
-
 
