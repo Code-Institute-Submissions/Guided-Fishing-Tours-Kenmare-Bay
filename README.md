@@ -61,14 +61,14 @@ I have used OpenWeather documentation and tutorials in ordet to create dynamic w
 I have used media querie from Stack Overflow tutorial [here](https://stackoverflow.com/questions/tagged/media-queries).
 
 ## Technologies  
-1.HTML
-2.CSS3
+1.HTML 
+2.CSS3 
 3.Bootstrap(4.4.1) 
 4.JavaScript 
 5.JQuery 
-6.EmailJS 
+6.EmailJS API 
 7.Google Maps API 
-8.OpenWeather API
+8.OpenWeather API 
 ## Features  
 The nav-bar and footer are used from Bootstrap with extra JavaScript for a toggle button in nav-bar. I have included back to top button also.
 ### Features left to implement
