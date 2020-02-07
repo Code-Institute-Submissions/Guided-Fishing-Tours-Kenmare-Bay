@@ -5,6 +5,7 @@ customer I have used number of technologies.
 My goal with this project is to attract attention of my future employers and recruiters and explain who I am 
 and what I do. 
 ## Demo  
+![Am I Responsive](/assets/images/Testing.png)
 A live demo can be found [here](https://alchemist2016.github.io/Project-2/).
 ## UX  
 ### User stories
