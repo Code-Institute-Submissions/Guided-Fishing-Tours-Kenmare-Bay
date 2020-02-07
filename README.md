@@ -59,28 +59,11 @@ Some photos are taken from Unsplash.com, Fotolea.com, Adventure Holidays.com, Wa
 I have used some generic code from Bootstrap 4 website and then significantly modified to fit the wireframes and original ideas.
 I have used Google Maps API documentation and tutorials in order to create Google Map.
 I have used OpenWeather documentation and tutorials in ordet to create dynamic weather widget on my web-site.
-I have used media querie from Stack Overflow tutorial [here](https://stackoverflow.com/questions/tagged/media-queries).
-
-## Technologies  
-
-1.HTML 
-2.CSS3 
-3.Bootstrap(4.4.1) 
-4.JavaScript 
-5.JQuery 
-6.EmailJS API 
-7.Google Maps API 
-8.OpenWeather API 
-
+I have used media querie from Stack Overflow tutorial [here](https://stackoverflow.com/questions/tagged/media-queries). 
 ## Features  
 The nav-bar and footer are used from Bootstrap with extra JavaScript for a toggle button in nav-bar. I have included back to top button also.
 ### Features left to implement
 I would love to add more functionality regarding Google Maps API, Weather widget, better control and verification of correct use of contact us form.
-## Testing  
-Testing was performed on all sizes of screens and devices. Also I have performed testing on several desktop browsers like Chrome, FireFox successfully. All links in navbar are tested. 
-Contact form is made in such a way that if you miss out or put invalid data in e-mail area you will be shown an error noting that you need to fill correct details. I have made a text area for Tours compulsory too.
-All links will open in new tab using 'target="_blank"'. All links have been manually tested to ensure that they are pointing to the correct destination.
-During the test phase I realised that some of the text rendered on pages was different color in Microsoft Edge. That is something I need to look into in the future.
 ## Deployment  
 This site is hosted using GitHub pages, deployed directly from the master branch. Updates are automatic with new commits. In order to deploy correctly on GitHub pages, the landing page must be named index.html.
 ## Credits 
