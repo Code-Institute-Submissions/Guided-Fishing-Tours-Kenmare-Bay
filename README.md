@@ -22,7 +22,7 @@ Allowing targeted user to get all the necessary information with the option to c
 In the footer I haved included links to YouTube profile, Facebook profile and Instagram.
 They all link to a new page opening thus keeping the integrity of original website and ease of use.
 ### Skeleton
-1.[Home wireframe](/assets/wireframes/2020024_095422.jpg)  
+1.[![Home wireframe](/assets/wireframes/2020024_095422.jpg)]  
 2.[About Me wireframe](/assets/wireframes/20200204_095458.jpg)  
 3.[Contact wireframe](/assets/wireframes/20200204_095515.jpg)  
 
