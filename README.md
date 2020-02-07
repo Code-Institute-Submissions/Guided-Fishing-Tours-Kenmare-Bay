@@ -1,4 +1,5 @@
 
+
 # Guided Tours Fishing in Kenmare Bay  
 This project was created with customer needs on mind and as well to promote product. For ease of passing information to 
 customer I have used number of technologies.
@@ -89,4 +90,5 @@ All content in fishing spots markers is taken from https://www.sea-angling-irela
 also Google Maps API, OpenWeather API.
 ### Media
 Some photos are taken from Unsplash.com, Fotolea.com, Adventureholidays.com, WallpaperFlare.com  free image library.
+
 
