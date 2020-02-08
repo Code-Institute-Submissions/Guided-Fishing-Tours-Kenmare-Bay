@@ -18,17 +18,16 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
 	</script>
-	<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
-</script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
+	<script  src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script>
+		(function(){
       emailjs.init("user_EXKocjTx1yahCHXq0tzvV");
    })();
-</script>
+	</script>
 </head>
 
 <body>
@@ -54,7 +53,7 @@
 				</ul>
 			</div>
 		</nav>
-		<!-- Jumbotron -->
+		<!-- Jumbotron Bootstrap-->
 		<div class="jumbotron">
 			<h1 class="display-4">Guided Tours<br>
 				 Fishing in Kenmare Bay</h1>
@@ -81,19 +80,20 @@
                     </div>
 					</div>
 				</div>
-		</div>
+			</div>
 	</section>
-	<!-- Fishing Spots-->
+	<!-- Fishing Spots -->
 	<section class="fishing_class" id="fishing_spots">
 		<div class="container fishing_map">
 			<div class="col-12">
 				<div class="alert alert-success">
 					<h2>Fishing Spots</h2>
 				</div>
+				<!-- Google Map API -->
 				<div id="map_wrapper_div">
 					<input type="text" class="form-control" id="search" placeholder="Search...">
 					<div id="map"></div>
-					<!----------------------------Weather API-->
+					<!-- Weather API -->
 					<div class="weather-container">
 						<div>
 							<input type="text" id="search_weather" placeholder="Enter city">
@@ -119,8 +119,9 @@
 					<h2>Contact Us</h2>
 				</div>
 				<div class="signup-form">
-					<form  onsubmit="return sendMail(this);">
-						<label for="name">Full Name</label>
+                <!-- EmailJS function -->
+					<form onsubmit="return sendMail(this);">
+						<label for="fullname">Full Name</label>
 						<input type="text" class="text-input" name="name" id="fullname"  required>
 						<label for="email">Email</label>
 						<input type="email" class="text-input" name="email" id="email" required>
@@ -129,19 +130,20 @@
 							<textarea class="form-control text-input"  name="tour_request" id="exampleFormControlTextarea3" rows="7" required></textarea>
 						</div>
 						<button class="join-button" type="submit" value="Submit" >Submit</button>
-                    </form>
-					</div>
+					</form>
 				</div>
 			</div>
+		</div>
 	</section>
+    <!-- Footer Section -->
 	<footer>
 		<div class="paragraph" id="links">
 			<ul class="social-links">
 				<li><a href="https://www.facebook.com/facebookapp" target="_blank"><i class="fa fa-facebook "></i></a>
 				</li>
 				<li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram "></i></a></li>
-				<li><a
-						href="https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ" target="_blank"><i class="fa fa-youtube "></i></a>
+				<li><a href="https://www.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ"
+						target="_blank"><i class="fa fa-youtube "></i></a>
 				</li>
 			</ul>
 		</div>
@@ -158,6 +160,7 @@
 	<!--  JavaScript -->
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/sendEmail.js"></script>
+    <!-- Google API key -->
 	<script
 		src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
 	</script>
