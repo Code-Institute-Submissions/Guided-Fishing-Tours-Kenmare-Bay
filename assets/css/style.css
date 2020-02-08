@@ -32,7 +32,7 @@ p {
     opacity: 1;
 }
 
-/*-----------------NavBar---------------------*/
+/*-----------------NavBar  Bootstrap 4.4.1---------------------*/
 .navbar {
     background: rgb(14, 107, 7);
     color: white;
@@ -80,6 +80,7 @@ p {
   flex: 80%;
   padding-bottom: 16px;
 }
+/*---------------Stack Overflow -----------*/
 
 @media screen and (max-width: 500px) {
   .about_image {
@@ -119,7 +120,7 @@ input#search {
     width: 100%;
     height: 30px;
 }
-/*--------------Back to top button------------*/
+/*--------------Back to top button Stack Overflow------------*/
 #myBtn {
   display: none;
   position: fixed;
@@ -239,7 +240,7 @@ footer {
 }
 footer ul li {
     display: inline-block;
-    margin: 0 20;
+    margin: 0px 20px;
     top: 20px;
     padding-top: 20px;
     padding-right: 40px;
