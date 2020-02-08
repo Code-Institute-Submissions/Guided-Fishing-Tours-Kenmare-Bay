@@ -1,3 +1,4 @@
+
 # Guided Tours Fishing in Kenmare Bay- Interactive Frontend Development Project
 
 "Give a man a fish and he will have food for a day, teach a man to fish and he will have food for the rest of his life"
@@ -74,7 +75,7 @@ Credits to Code Institute for teaching me to do this cool stuff.
 Thanks to good people on Stack Overflow.
 Thanks to my Tutors from Code Institute for guidance through tough times.
 ### Content
-All content in fishing spots markers is taken from https://www.sea-angling-ireland.org/shore%20-%20kerry%20-%20ring.html
+All content in fishing spots markers is taken from [sea-angling-ireland.org](https://www.sea-angling-ireland.org/shore%20-%20kerry%20-%20ring.html)
 also, Google Maps API documentation and instructions,
 OpenWeather API documentation and instructions.
 All other content was written by me.
