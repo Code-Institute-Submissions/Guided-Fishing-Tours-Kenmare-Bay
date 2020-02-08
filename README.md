@@ -1,4 +1,3 @@
-
 # Guided Tours Fishing in Kenmare Bay- Interactive Frontend Development Project
 
 "Give a man a fish and he will have food for a day, teach a man to fish and he will have food for the rest of his life"
@@ -8,9 +7,7 @@ This project was created with customer needs on mind and as well to promote prod
 This peoject includes several API's like Google Maps, Open Weather, EmailJS. Although there is aboundant offer of other APIs
 I decided on these because they fall in well with the narative of the website and its purpose. I was guided with approach of "less is more" and focused on ease of use rather than complexity of offer to a user. This project is far from finished and I think it could benefit from updates later.
 ## Demo  
-
 ![Am I Responsive](/assets/images/testing.png)
-
 A live demo can be found [here](https://alchemist2016.github.io/Guided-Fishing-Tours-Kenmare-Bay/).
 ## UX  
 ### User stories
@@ -18,7 +15,7 @@ As a user I would like to be able to easily retrieve informations that are of us
 Within this project I wanted to provide clarity of purpose, natural flow of structure, and easy access to 
 further informations as well interactivity between user and the website and its informations. 
 Here as a user I have links to parts of the website I could jump to:
-![Landing Page](/assets/images/langing_page.png)
+![Landing Page](/assets/images/landing_page.png)
 On this page I can read about the proposed tours and some information about the company.
 ![About Us](/assets/images/about_us.png)
 ### Strategy
