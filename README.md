@@ -37,7 +37,7 @@ They all link to a new page opening thus keeping the integrity of original websi
 ### Skeleton
 1.[Home wireframe](/assets/wireframes/main_page.jpg)  
 2.[About Us wireframe](/assets/wireframes/about_us.jpg)  
-3.[Fishing Spots wireframe](/assets/wireframes/fishing_spots.jpg)
+3.[Fishing Spots wireframe](/assets/wireframes/fishing_spots.jpg) 
 4.[Contact Us wireframe](/assets/wireframes/contact_us.jpg)
 
 ## Technologies  
