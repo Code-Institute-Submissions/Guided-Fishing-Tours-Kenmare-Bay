@@ -8,11 +8,9 @@ This project was created with customer needs on mind and as well to promote prod
 This peoject includes several API's like Google Maps, Open Weather, EmailJS. Although there is aboundant offer of other APIs
 I decided on these because they fall in well with the narative of the website and its purpose. I was guided with approach of "less is more" and focused on ease of use rather than complexity of offer to a user. This project is far from finished and I think it could benefit from updates later.
 ## Demo  
-<<<<<<< HEAD
+
 ![Am I Responsive](/assets/images/testing.png)
-=======
-![Am I Responsive](/assets/images/Testing.png)
->>>>>>> e6be1465de98ba49c6427655b85de1d8c21e08d5
+
 A live demo can be found [here](https://alchemist2016.github.io/Guided-Fishing-Tours-Kenmare-Bay/).
 ## UX  
 ### User stories
@@ -82,8 +80,3 @@ All content in fishing spots markers is taken from https://www.sea-angling-irela
 also Google Maps API, OpenWeather API.
 ### Media
 Some photos are taken from Unsplash.com, Fotolea.com, Adventureholidays.com, WallpaperFlare.com  free image library.
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e6be1465de98ba49c6427655b85de1d8c21e08d5
