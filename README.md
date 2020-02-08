@@ -40,6 +40,7 @@ They all link to a new page opening thus keeping the integrity of original websi
 3.[Fishing Spots wireframe](/assets/wireframes/fishing_spots.jpg) 
 4.[Contact Us wireframe](/assets/wireframes/contact_us.jpg)
 
+
 ## Technologies  
 1.HTML 
 2.CSS3 
