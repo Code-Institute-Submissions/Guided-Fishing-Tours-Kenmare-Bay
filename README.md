@@ -1,3 +1,4 @@
+
 # Guided Tours Fishing in Kenmare Bay- Interactive Frontend Development Project
 
 "Give a man a fish and he will have food for a day, teach a man to fish and he will have food for the rest of his life"
@@ -30,12 +31,14 @@ and user-friendly. Also I wanted to give a user visual orientation and informati
 ### Scope
 Allowing targeted user to get all the necessary information with the option to contact fictional company if they choose.
 ### Structure
+The main aim to this structure is to provide positive experience and simplicity of use. The layout is intuitive and coloring is related to outdoors greens and blues and also colors of Kerry County. Back to top button allows quick one click return to landing page where all other links are available. Hamburger button on smaller screen sizes is also easy to use.
 In the footer I haved included links to YouTube profile, Facebook profile and Instagram.
 They all link to a new page opening thus keeping the integrity of original website and ease of use.
 ### Skeleton
-1.[Home wireframe](/assets/wireframes/20200204_095422.jpg)  
-2.[About Me wireframe](/assets/wireframes/20200204_095458.jpg)  
-3.[Contact wireframe](/assets/wireframes/20200204_095515.jpg)  
+1.[Home wireframe](/assets/wireframes/main_page.jpg)  
+2.[About Us wireframe](/assets/wireframes/about_us.jpg)  
+3.[Fishing Spots wireframe](/assets/wireframes/fishing_spots.jpg)
+4.[Contact Us wireframe](/assets/wireframes/contact_us.jpg)
 
 ## Technologies  
 1.HTML 
