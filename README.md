@@ -14,10 +14,16 @@ A live demo can be found [here](https://alchemist2016.github.io/Guided-Fishing-T
 As a user I would like to be able to easily retrieve informations that are of use to me. Being engaged by the website and exploring its contents that would keep me entertained and relevant to my needs. So as a fishing enthusiast that is travelling to Kenmare Town for a fishing trip I would like to see how it would look like and I would like a professional first impressions.
 Within this project I wanted to provide clarity of purpose, natural flow of structure, and easy access to 
 further informations as well interactivity between user and the website and its informations. 
+
 Here as a user I have links to parts of the website I could jump to:
 ![Landing Page](/assets/images/landing_page.png)
 On this page I can read about the proposed tours and some information about the company.
 ![About Us](/assets/images/about_us.png)
+This is a busy page where I can as a user find a lot of information. The Search Bar above Google Map can retrive me any place to stay or I can find out about proposed fishing markers on the map which when cliked will open a pop up window with more details about that perticular spot. 
+As always before you go fishing you want to know what kind of weather you can expect in that area with wind strength as one of the most important informations. For that I can quickly glance at the weather app which offers default info for Kenmare Town but I can also use Search Box which will dinamically retrieve info about any city in APIs database.
+![Fishing Spots](/assets/images/fishing_spots.png)
+Here on a Contact page I can enquire about fishing trip. All fields are marked as required and will accept appropriate values.
+![Contact Us](/assets/images/contact_us.png)
 ### Strategy
 My goal was appealing website which provides easy as possible access to information and keeping it minimalist 
 and user-friendly. Also I wanted to give a user visual orientation and information related to structure of the site.
