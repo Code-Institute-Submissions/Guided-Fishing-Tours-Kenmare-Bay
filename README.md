@@ -9,7 +9,7 @@ This peoject includes several API's like Google Maps, Open Weather, EmailJS. Alt
 I decided on these because they fall in well with the narative of the website and its purpose. I was guided with approach of "less is more" and focused on ease of use rather than complexity of offer to a user. This project is far from finished and I think it could benefit from updates later.
 ## Demo  
 ![Am I Responsive](/assets/images/Testing.png)
-A live demo can be found [here](https://alchemist2016.github.io/Project-2/).
+A live demo can be found [here](https://alchemist2016.github.io/Guided-Fishing-Tours-Kenmare-Bay/).
 ## UX  
 ### User stories
 Within this project I wanted to provide clarity of purpose, natural flow of structure, and easy access to 
