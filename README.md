@@ -1,4 +1,3 @@
-
 # Guided Tours Fishing in Kenmare Bay- Interactive Frontend Development Project
 
 "Give a man a fish and he will have food for a day, teach a man to fish and he will have food for the rest of his life"
@@ -41,14 +40,15 @@ They all link to a new page opening thus keeping the integrity of original websi
 4.[Contact Us wireframe](/assets/wireframes/contact_us.jpg)
 
 ## Technologies  
-1.HTML 
-2.CSS3 
-3.Bootstrap(4.4.1) 
-4.JavaScript 
-5.JQuery 
-6.EmailJS API 
-7.Google Maps API 
-8.OpenWeather API 
+1.HTML   
+2.CSS3    
+3.Bootstrap(4.4.1)   
+4.JavaScript   
+5.JQuery    
+6.Jasmin   
+7.EmailJS API   
+8.Google Maps API   
+9.OpenWeather API   
 ## Features  
 The nav-bar and footer are used from Bootstrap with extra JavaScript for a toggle button in nav-bar. I have included back to top button also.
 ### Features left to implement
