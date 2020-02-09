@@ -78,14 +78,14 @@ p {
 }
 
 .about_image {
-  flex: 80%;
-  padding-bottom: 16px;
+  width: 100%;
 }
 /*---------------Stack Overflow -----------*/
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
   .about_image {
-    width: 100%;
+   flex: 80%;
+   padding-bottom: 16px;
   }
 }
 /*----------------Fishing Spots with Google Map ----------------*/
